@@ -1,0 +1,1 @@
+JN_ZDGJ = IsCurrentAction(24) JN_HYCJ = GetActionCooldown(13) s_m = UnitMana('player') if IsBuffActive('火球术', 'target') and JN_HYCJ == 0 and s_m >= 40 then ChatFrame1:AddMessage('>>>>火焰冲击<<<<') CastSpellByName('火焰冲击') end if s_m >= 45 then ChatFrame1:AddMessage('>>>>火球术<<<<') CastSpellByName('火球术') end if not JN_ZDGJ then AttackTarget() end
